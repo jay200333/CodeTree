@@ -9,7 +9,7 @@ for _ in range(n):
 
 # Please write your code here.
 visited = [0] * 2001
-cur_idx = 100
+cur_idx = 0
 for i in range(n):
     if dir[i] == 'R':
         left = cur_idx
@@ -23,7 +23,7 @@ for i in range(n):
 
 for left, right in temp:
     for j in range(left, right):
-        visited[j+100] += 1
+        visited[j+1000] += 1
         
 answer = 0
 for i in visited:
