@@ -8,7 +8,7 @@ for i in range(n):
     max_height = max(max_height, max(grid[i]))
 dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
-answer = [1, -1]
+answer = [1, 0]
 
 def dfs(r, c, h):
     for i in range(4):
