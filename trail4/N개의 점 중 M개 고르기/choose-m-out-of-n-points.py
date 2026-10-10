@@ -14,6 +14,9 @@ def calculate():
 
 def backtrack(idx):
     global answer
+    if len(arr) > m:
+        return
+        
     if idx == n:
         if len(arr) == m:
             result = calculate()
